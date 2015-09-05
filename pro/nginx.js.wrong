@@ -1,0 +1,8 @@
+var net = require('net');
+
+net.createServer().listen('/tmp/test.sock', function(req, res){
+	console.log('got');
+	console.log(req);
+	res.send('hello node.js');
+})
+
